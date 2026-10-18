@@ -2562,3 +2562,30 @@ small,
 .contact-page-grid .contact-form .form-hint{color:var(--muted)}
 .contact-page-grid .contact-form .form-error{color:var(--lime)}
 @media(max-width:700px){.contact-page-grid .contact-form{padding:20px 16px}.contact-page-grid .contact-form .formline{flex-direction:column;gap:16px}}
+
+/* Keep the homepage contact section compact and balanced */
+.home-contact-size{margin-top:112px;padding-top:58px;padding-bottom:66px}
+.home-contact-size .contact-row{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:start;gap:clamp(32px,7vw,84px);margin-top:26px}
+.home-contact-size h2{max-width:460px;font-size:clamp(44px,6.2vw,76px);line-height:1;letter-spacing:-2.8px}
+.home-contact-size .contact-form{width:100%;max-width:620px;min-width:0}
+.home-contact-size .contact-form form{gap:13px;margin-top:18px}
+.home-contact-size .contact-form input,.home-contact-size .contact-form textarea,.home-contact-size .contact-form select{box-sizing:border-box;min-width:0;width:100%}
+@media(max-width:700px){.home-contact-size{margin-top:70px;padding:42px 6vw 50px}.home-contact-size .contact-row{grid-template-columns:minmax(0,1fr);gap:15px;margin-top:18px}.home-contact-size h2{font-size:clamp(40px,11.5vw,49px);line-height:1.02;letter-spacing:-2px;margin:14px 0 0}.home-contact-size .contact-form{max-width:none}.home-contact-size .contact-form form{gap:13px;margin-top:17px}}
+
+/* Homepage contact form controls and paired-field layout */
+.home-contact-size .contact-form form{display:grid;gap:15px;width:100%}
+.home-contact-size .contact-form label{display:grid;gap:8px;min-width:0;flex:1;color:var(--muted);font-size:11px;line-height:1.4}
+.home-contact-size .contact-form .formline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;width:100%}
+.home-contact-size .contact-form input,.home-contact-size .contact-form textarea,.home-contact-size .contact-form select{display:block;box-sizing:border-box;width:100%;min-width:0;min-height:43px;padding:12px;background:var(--bg);border:1px solid var(--line);border-radius:2px;color:var(--text);font:inherit;font-size:12px;line-height:1.4}
+.home-contact-size .contact-form textarea{min-height:120px;resize:vertical;line-height:1.65}
+.home-contact-size .contact-form select{color-scheme:dark;cursor:pointer}
+.home-contact-size .contact-form input::placeholder,.home-contact-size .contact-form textarea::placeholder{color:var(--muted);opacity:.78}
+.home-contact-size .contact-form input:focus-visible,.home-contact-size .contact-form textarea:focus-visible,.home-contact-size .contact-form select:focus-visible{outline:2px solid var(--lime);outline-offset:2px;border-color:var(--lime)}
+.home-contact-size .contact-form .button{justify-self:start}
+.home-contact-size .contact-form .form-hint,.home-contact-size .contact-form .form-error{margin:0;font-size:10px;line-height:1.6}
+.home-contact-size .contact-form .form-hint{color:var(--muted)}
+.home-contact-size .contact-form .form-error{color:var(--lime)}
+@media(max-width:700px){.home-contact-size .contact-form .formline{grid-template-columns:minmax(0,1fr);gap:15px}}
+.footer-linkedin{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;transition:color .2s ease}
+.footer-linkedin svg{color:var(--lime)}
+.footer-linkedin:hover{color:var(--lime)!important}
